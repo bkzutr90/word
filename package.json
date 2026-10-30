@@ -1,0 +1,20 @@
+{
+  "name": "kataverse-bot",
+  "version": "1.1.0",
+  "description": "Bot Discord game kata: sambung kata, tebak kata, tebak gambar, susun kata",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "postinstall": "cd node_modules/better-sqlite3 && (npx --yes prebuild-install || npx --yes node-gyp rebuild --release)"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "better-sqlite3": "^11.3.0",
+    "cheerio": "^1.0.0",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5"
+  }
+}
